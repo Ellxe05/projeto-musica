@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Major+Mono+Display&display=swap');
+
+:root {
+    --cor001: white; 
+    --cor002: #6b100d;
+    --cor003: black; 
+
+    --fonte-padrao: arial, verdana, helvetica;
+    --fonte-destaque:'Bebas Neue', sans-serif;
+    --fonte-titulo:'Major Mono Display', monospace;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: rgb(37, 37, 37);
+    font-family: var(--fonte-padrao);
+
+}
+
+header {
+    color: var(--cor001);
+    text-align: center;
+}
+header > h1 {
+    color: var(--cor002);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte-titulo);
+    font-size: 5em;
+    text-shadow: 2px 2px 0px rgba(243, 243, 243, 0.336);
+
+}
+header > p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.61);
+
+}
+
+nav {
+    text-align: center;
+    font-size: 1.3em;
+}
+nav > a, footer a {
+    color: var(--cor001);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    transition-duration: 0.5s;
+    font-family: var(--fonte-destaque);
+}
+nav > a:hover, footer a:hover {
+    background-color: var(--cor002);
+    color: var(--cor001);
+    border-radius: 5px;
+}
+
+.normal a {
+    color: var(--cor003);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    transition-duration: 0.5s;
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+}
+
+.imagem a {
+    color: var(--cor001);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    transition-duration: 0.5s;
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+}
+
+.normal a:hover, .imagem a:hover {
+    background-color: var(--cor002);
+    color: var(--cor001);
+    border-radius: 5px;
+}
+
+h2 {
+    color: var(--cor002);
+    padding: 20px;
+    font-family: var(--fonte-destaque);
+    font-size: 2.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.527);
+    text-align: center;
+
+}
+
+section {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+section.normal {
+    background-color: var(--cor001);
+    color: var(--cor003);
+}
+
+section.imagem {
+    background-color: rgb(122, 121, 121);
+    color: var(--cor001);
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    display: inline-block;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+section#img001 {
+    background-image: url('../imagens/show004.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img002 {
+    background-image: url('../imagens/guitarra002.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer {
+    background-color: var(--cor003);
+    color: var(--cor001);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+}
+footer > p > a {
+    text-decoration: none;
+    color: var(--cor001);
+
+}
